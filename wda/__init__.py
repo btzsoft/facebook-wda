@@ -1779,5 +1779,3 @@ class USBClient(Client):
             return
 
         _start_wda_xctest(udid, wda_bundle_id)
-        if not self.wait_ready(timeout=20):
-            raise RuntimeError("wda xctest launched but check failed")
